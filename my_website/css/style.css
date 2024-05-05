@@ -15,6 +15,12 @@ body {
     color: #333;
 }
 
+/* Dark Mode */
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
 /* Hamburger Menu Styles */
 .menu-btn__burger {
     width: 30px; /* Width of the hamburger lines */
@@ -62,6 +68,11 @@ body {
     color: #333;
 }
 
+button {
+    all: unset;
+    cursor: pointer;
+}
+
 /* Main Content and Introduction */
 main {
     padding: 20px;
@@ -74,35 +85,10 @@ main {
     font-weight: bold;
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Utility Classes */
-.text-center {
-    text-align: center;
-}
-
-.bg-light {
-    background-color: #f4f4f4;
-}
-
 /* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #f4f4f4;
     }
 }
